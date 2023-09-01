@@ -1,27 +1,76 @@
-# ChartItem
+# Chart for Angular Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
+>  *  This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
+
+![bar](./src/assets/bar.png)
+![MasterHead](./src/assets/line.png)
+![MasterHead](./src/assets/doughnut.png)
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `npm strat` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Angular Chart Components
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Angular Chart Components is a set of ready-to-use components designed to simplify the integration of interactive charts into your Angular projects. These components are built on the popular Chart.js library, offering a robust solution for data visualization in your web applications.
 
-## Build
+### Table of Contents
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. [Prerequisites](#prerequisites)
+2. [Installation](#installation)
+3. [Usage](#usage)
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Prerequisites
 
-## Running end-to-end tests
+Before you start integrating the chart components, make sure you have the following prerequisites in place:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- Node.js and npm installed
+- An existing Angular project
 
-## Further help
+## Installation
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+To integrate the chart components into your Angular project, follow these steps:
+
+1. **Install Chart.js**:
+
+   In your Angular project directory, run the following command to install 
+   
+   *Chart.js:*
+
+   ```bash
+    npm install chart.js
+    ```
+
+    *chartjs-plugin-zoom:*
+
+   ```bash
+    npm install chartjs-plugin-zoom
+    ```
+## usage
+
+To use the Simple Chart component in your Angular project, follow these steps:
+
+1. **Create a Chart Component:**
+
+   Use the Angular CLI command to generate a chart component by running the following command:
+
+   ```bash
+   ng generate component chart
+    ```
+
+2. **Copy HTML, CSS, and TypeScript Code:**
+
+    In the directory of your newly generated chart component (chart), replace the content of the HTML, CSS, and TypeScript files with the corresponding code found in the src/app/component/chart folder of your project.
+
+3. **Integrate the Chart Component:**
+
+    In the HTML file of your Angular component where you want to display the chart, add the <app-chart> tag as follows:
+    
+    ```html
+    <app-chart [data]="data" [label]="label" [title]="'test'" [type]="type"></app-chart>
+    ```
+    Make sure to customize the data, label, title, and type attributes according to your specific chart data and requirements.
+
+    **You can follow a similar format to document the usage of the Zoom Chart component, just replacing the component name and specific details accordingly.**
+
