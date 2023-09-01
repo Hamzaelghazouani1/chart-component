@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ChartComponent } from './component/chart/chart.component';
+import { ChartZoomComponent } from './component/chart-zoom/chart-zoom.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ChartComponent,
+    ChartZoomComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule
+    BrowserModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

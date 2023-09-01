@@ -1,0 +1,35 @@
+.container_chart{
+    position: relative;
+}
+
+.chart{
+    width: inherit;
+    height: inherit;
+}
+
+.btn{
+    background: #2769c57a;
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+  }
+  
+  .position{
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    margin: 16px;
+    background: rgba(43, 42, 42, 0.726);
+    padding: 8px 4px;
+    border-radius: 32px;
+  }
+  
+  .position>button{
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+  background: #cacaca7a;
+  }

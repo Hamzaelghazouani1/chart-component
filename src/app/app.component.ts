@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'chart_item';
+  label = ['January 2019', 'February 2019', 'March 2019', 'April 2019'];
+  data = [10, 50, 0, 74];
+  type:string = 'line';
+
+  actionChart(type:string):void{
+    this.type = type;    
+  }
 }
